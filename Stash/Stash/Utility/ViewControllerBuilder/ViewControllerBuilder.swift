@@ -10,9 +10,23 @@ import UIKit
 
 struct ViewControllerBuilder {
 
+	// MARK: - Private properties
+	
+	private let router: Router
+
+	// MARK: - Init
+	
+	init(router: Router) {
+		self.router = router
+	}
+
 	// MARK: - Public properties
 
+	var mainViewControllerBuilder: MainViewControllerBuilder {
+		return MainViewControllerBuilder(router: router)
+	}
+
 	var coachViewControllerBuilder: CoachViewControllerBuilder {
-		return CoachViewControllerBuilder()
+		return CoachViewControllerBuilder(router: router)
 	}
 }

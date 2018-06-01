@@ -1,5 +1,5 @@
 //
-//  CoachViewControllerBuilder.swift
+//  MainViewControllerBuilder.swift
 //  Stash
 //
 //  Created by Bruno Agatte on 6/1/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct CoachViewControllerBuilder {
+struct MainViewControllerBuilder {
 
 	// MARK: - Private properties
 
@@ -22,8 +22,8 @@ struct CoachViewControllerBuilder {
 
 	// MARK: - Public methods
 
-	func achievementsViewController() -> AchievementsViewController {
-		let viewController = UIStoryboard.instantiateViewControllerOfType(AchievementsViewController.self)
+	func mainViewController() -> MainViewController {
+		let viewController = UIStoryboard.instantiateViewControllerOfType(MainViewController.self)
 		viewController.router = router
 		return viewController
 	}

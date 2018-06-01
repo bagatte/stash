@@ -10,11 +10,16 @@ import UIKit
 
 class AchievementsViewController: UIViewController {
 
+	// MARK: - Public properties
+
+	weak var router: Router!
+
 	// MARK: - Lifecycle methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+		navigationController?.setNavigationBarHidden(false, animated: true)
     }
 }
 
