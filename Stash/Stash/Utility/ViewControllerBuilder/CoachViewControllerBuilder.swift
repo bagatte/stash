@@ -27,7 +27,10 @@ struct CoachViewControllerBuilder {
 	func achievementsViewController() -> AchievementsViewController {
 		let viewController = UIStoryboard.instantiateViewControllerOfType(AchievementsViewController.self)
 		viewController.router = router
-		viewController.resource = resource
+		viewController.interactor = AchievementsInteractor(
+			presenter: AchievementsPresenter(viewController: viewController),
+			resource: resource
+		)
 		return viewController
 	}
 }

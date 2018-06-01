@@ -8,12 +8,17 @@
 
 import UIKit
 
+protocol AchievementsDisplayLogic: class {
+
+	func displayFetchedAchievements(viewModels: [AchievementViewModel])
+}
+
 class AchievementsViewController: UIViewController {
 
 	// MARK: - Public properties
 
+	var interactor: AchievementsBusinessLogic!
 	weak var router: Router!
-	var resource: CoachResource!
 
 	// MARK: - Lifecycle methods
 
@@ -22,25 +27,17 @@ class AchievementsViewController: UIViewController {
 
 		navigationController?.setNavigationBarHidden(false, animated: true)
 
-		do {
-			try resource.fetchInvestor { result in
-				switch result {
-				case .success(let investor):
-					print("HEREEE: \(investor)")
-
-				case .error(let error):
-					guard let utilityError = error as? UtilityError else {
-						print(error.localizedDescription)
-						return
-					}
-
-					print(utilityError.localizedDescription)
-				}
-			}
-		} catch {
-			print("Error: \(error.localizedDescription)")
-		}
+		interactor.fetchAchievements()
     }
+}
+
+// MARK: - AchievementsDisplayLogic
+
+extension AchievementsViewController : AchievementsDisplayLogic {
+
+	func displayFetchedAchievements(viewModels: [AchievementViewModel]) {
+		print(viewModels)
+	}
 }
 
 // MARK: - StoryboardInstantiable
