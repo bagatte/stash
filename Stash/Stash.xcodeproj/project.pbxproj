@@ -19,8 +19,8 @@
 		F51CED2120C1871D008EF850 /* ViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1F20C1871D008EF850 /* ViewControllerBuilder.swift */; };
 		F51CED2320C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */; };
 		F51CED2420C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */; };
-		F51CED2620C1882B008EF850 /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2520C1882B008EF850 /* CoachViewController.swift */; };
-		F51CED2720C1882B008EF850 /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2520C1882B008EF850 /* CoachViewController.swift */; };
+		F51CED2620C1882B008EF850 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2520C1882B008EF850 /* AchievementsViewController.swift */; };
+		F51CED2720C1882B008EF850 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2520C1882B008EF850 /* AchievementsViewController.swift */; };
 		F51CED2C20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */; };
 		F51CED2D20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */; };
 		F51CED2E20C18AF6008EF850 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2A20C18AF6008EF850 /* Coach.storyboard */; };
@@ -59,7 +59,7 @@
 		F51CED6820C1CD05008EF850 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6620C1CD05008EF850 /* AchievementsInteractor.swift */; };
 		F51CED6A20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */; };
 		F51CED6B20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */; };
-		F51CED6E20C1D4DF008EF850 /* CoachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6D20C1D4DF008EF850 /* CoachViewModel.swift */; };
+		F51CED6E20C1D4DF008EF850 /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */; };
 		F51CED7020C1F509008EF850 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +86,7 @@
 		F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+StoryboardInstantiable.swift"; sourceTree = "<group>"; };
 		F51CED1F20C1871D008EF850 /* ViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuilder.swift; sourceTree = "<group>"; };
 		F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewControllerBuilder.swift; sourceTree = "<group>"; };
-		F51CED2520C1882B008EF850 /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
+		F51CED2520C1882B008EF850 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51CED2A20C18AF6008EF850 /* Coach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
 		F51CED2B20C18AF6008EF850 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		F51CED6320C1CA26008EF850 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F51CED6620C1CD05008EF850 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
 		F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
-		F51CED6D20C1D4DF008EF850 /* CoachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewModel.swift; sourceTree = "<group>"; };
+		F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
 		F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,10 +218,7 @@
 		F51CED0D20C182CD008EF850 /* Coach */ = {
 			isa = PBXGroup;
 			children = (
-				F51CED6C20C1D4BD008EF850 /* ViewModels */,
-				F51CED2520C1882B008EF850 /* CoachViewController.swift */,
-				F51CED6620C1CD05008EF850 /* AchievementsInteractor.swift */,
-				F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */,
+				F51CED7120C20124008EF850 /* Achievements */,
 			);
 			path = Coach;
 			sourceTree = "<group>";
@@ -333,9 +330,20 @@
 		F51CED6C20C1D4BD008EF850 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F51CED6D20C1D4DF008EF850 /* CoachViewModel.swift */,
+				F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F51CED7120C20124008EF850 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED6C20C1D4BD008EF850 /* ViewModels */,
+				F51CED2520C1882B008EF850 /* AchievementsViewController.swift */,
+				F51CED6620C1CD05008EF850 /* AchievementsInteractor.swift */,
+				F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */,
+			);
+			path = Achievements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,7 +458,7 @@
 				F51CED4120C1A299008EF850 /* MainRouter.swift in Sources */,
 				F51CED3C20C193E1008EF850 /* MainViewControllerBuilder.swift in Sources */,
 				F51CECDE20C17FE0008EF850 /* MainViewController.swift in Sources */,
-				F51CED6E20C1D4DF008EF850 /* CoachViewModel.swift in Sources */,
+				F51CED6E20C1D4DF008EF850 /* AchievementViewModel.swift in Sources */,
 				F51CED6420C1CA26008EF850 /* Result.swift in Sources */,
 				F51CED3820C18DC7008EF850 /* UIViewController+Extensions.swift in Sources */,
 				F51CED6720C1CD05008EF850 /* AchievementsInteractor.swift in Sources */,
@@ -471,7 +479,7 @@
 				F51CED7020C1F509008EF850 /* UIAlertController+Extensions.swift in Sources */,
 				F51CED5820C1B0D6008EF850 /* StaticCoachResource.swift in Sources */,
 				F51CED5B20C1B159008EF850 /* Resources.swift in Sources */,
-				F51CED2620C1882B008EF850 /* CoachViewController.swift in Sources */,
+				F51CED2620C1882B008EF850 /* AchievementsViewController.swift in Sources */,
 				F51CECDC20C17FE0008EF850 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,7 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F51CED5320C1B039008EF850 /* CoachResource.swift in Sources */,
-				F51CED2720C1882B008EF850 /* CoachViewController.swift in Sources */,
+				F51CED2720C1882B008EF850 /* AchievementsViewController.swift in Sources */,
 				F51CED5620C1B091008EF850 /* LocalCoachResource.swift in Sources */,
 				F51CED6B20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */,
 				F51CED2120C1871D008EF850 /* ViewControllerBuilder.swift in Sources */,

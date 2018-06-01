@@ -1,5 +1,5 @@
 //
-//  CoachViewModel.swift
+//  AchievementViewModel.swift
 //  Stash
 //
 //  Created by Bruno Agatte on 6/1/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct CoachViewModel {
+struct AchievementViewModel {
 
 	init(achievement: Achievement) {
 		
