@@ -13,11 +13,13 @@ struct CoachViewControllerBuilder {
 	// MARK: - Private properties
 
 	private let router: Router
+	private let resource: CoachResource
 
 	// MARK: - Init
 
-	init(router: Router) {
+	init(router: Router, resource: CoachResource) {
 		self.router = router
+		self.resource = resource
 	}
 
 	// MARK: - Public methods
@@ -25,6 +27,7 @@ struct CoachViewControllerBuilder {
 	func achievementsViewController() -> AchievementsViewController {
 		let viewController = UIStoryboard.instantiateViewControllerOfType(AchievementsViewController.self)
 		viewController.router = router
+		viewController.resource = resource
 		return viewController
 	}
 }

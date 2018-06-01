@@ -10,9 +10,33 @@ import UIKit
 
 final class AppEnvironment {
 
+	// MARK: - Private properties
+
+	private let jsonFileReader: JSONFileReader = JSONFileReader()
+	private let jsonParser: JSONParser = JSONParser()
+
+	// MARK: - Init
+
 	init() {
 		let router: Router = Router()
-		router.setupRouters(withViewControllerBuilder: ViewControllerBuilder(router: router))
+		router.setupRouters(
+			withViewControllerBuilder: ViewControllerBuilder(
+				router: router,
+				resources: self
+			)
+		)
 		router.setupRootViewController()
+	}
+}
+
+// MARK: - Resources
+
+extension AppEnvironment: Resources {
+
+	var coachResource: CoachResource {
+		return LocalCoachResource(
+			jsonFileReader: jsonFileReader,
+			jsonParser: jsonParser
+		)
 	}
 }

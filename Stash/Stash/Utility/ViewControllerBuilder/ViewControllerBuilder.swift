@@ -13,11 +13,13 @@ struct ViewControllerBuilder {
 	// MARK: - Private properties
 	
 	private let router: Router
+	private let resources: Resources
 
 	// MARK: - Init
 	
-	init(router: Router) {
+	init(router: Router, resources: Resources) {
 		self.router = router
+		self.resources = resources
 	}
 
 	// MARK: - Public properties
@@ -27,6 +29,6 @@ struct ViewControllerBuilder {
 	}
 
 	var coachViewControllerBuilder: CoachViewControllerBuilder {
-		return CoachViewControllerBuilder(router: router)
+		return CoachViewControllerBuilder(router: router, resource: resources.coachResource)
 	}
 }
