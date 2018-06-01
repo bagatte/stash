@@ -11,9 +11,22 @@
 		F51CECDE20C17FE0008EF850 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDD20C17FE0008EF850 /* MainViewController.swift */; };
 		F51CECE320C17FE2008EF850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51CECE220C17FE2008EF850 /* Assets.xcassets */; };
 		F51CECF120C17FE2008EF850 /* StashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECF020C17FE2008EF850 /* StashTests.swift */; };
-		F51CED0B20C18278008EF850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED0720C18277008EF850 /* Main.storyboard */; };
-		F51CED0C20C18278008EF850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED0920C18277008EF850 /* LaunchScreen.storyboard */; };
-		F51CED1220C1835A008EF850 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED1020C1835A008EF850 /* Coach.storyboard */; };
+		F51CED1820C185A6008EF850 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */; };
+		F51CED1920C185A6008EF850 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */; };
+		F51CED1C20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */; };
+		F51CED1D20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */; };
+		F51CED2020C1871D008EF850 /* ViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1F20C1871D008EF850 /* ViewControllerBuilder.swift */; };
+		F51CED2120C1871D008EF850 /* ViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1F20C1871D008EF850 /* ViewControllerBuilder.swift */; };
+		F51CED2320C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */; };
+		F51CED2420C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */; };
+		F51CED2620C1882B008EF850 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2520C1882B008EF850 /* AchievementsViewController.swift */; };
+		F51CED2720C1882B008EF850 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2520C1882B008EF850 /* AchievementsViewController.swift */; };
+		F51CED2C20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */; };
+		F51CED2D20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */; };
+		F51CED2E20C18AF6008EF850 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2A20C18AF6008EF850 /* Coach.storyboard */; };
+		F51CED2F20C18AF6008EF850 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2A20C18AF6008EF850 /* Coach.storyboard */; };
+		F51CED3020C18AF6008EF850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2B20C18AF6008EF850 /* Main.storyboard */; };
+		F51CED3120C18AF6008EF850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2B20C18AF6008EF850 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +48,14 @@
 		F51CECEC20C17FE2008EF850 /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51CECF020C17FE2008EF850 /* StashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashTests.swift; sourceTree = "<group>"; };
 		F51CECF220C17FE2008EF850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F51CED0820C18277008EF850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Stash/Resources/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		F51CED0A20C18277008EF850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Stash/Resources/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		F51CED1120C1835A008EF850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Stash/Resources/Base.lproj/Coach.storyboard; sourceTree = SOURCE_ROOT; };
+		F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+StoryboardInstantiable.swift"; sourceTree = "<group>"; };
+		F51CED1F20C1871D008EF850 /* ViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuilder.swift; sourceTree = "<group>"; };
+		F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewControllerBuilder.swift; sourceTree = "<group>"; };
+		F51CED2520C1882B008EF850 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F51CED2A20C18AF6008EF850 /* Coach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
+		F51CED2B20C18AF6008EF850 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				F51CED0F20C18301008EF850 /* Coach */,
-				F51CED0620C18267008EF850 /* Base.lproj */,
+				F51CED2820C18ABF008EF850 /* Storyboards */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -128,24 +146,17 @@
 		F51CECFE20C180CE008EF850 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F51CED1A20C18612008EF850 /* Extensions */,
+				F51CED1320C184C5008EF850 /* Storyboard */,
+				F51CED1E20C186F3008EF850 /* ViewControllerBuilder */,
 			);
 			path = Utility;
-			sourceTree = "<group>";
-		};
-		F51CED0620C18267008EF850 /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				F51CED0920C18277008EF850 /* LaunchScreen.storyboard */,
-				F51CED0720C18277008EF850 /* Main.storyboard */,
-				F51CED1020C1835A008EF850 /* Coach.storyboard */,
-			);
-			name = Base.lproj;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F51CED0D20C182CD008EF850 /* Coach */ = {
 			isa = PBXGroup;
 			children = (
+				F51CED2520C1882B008EF850 /* AchievementsViewController.swift */,
 			);
 			path = Coach;
 			sourceTree = "<group>";
@@ -162,6 +173,41 @@
 			children = (
 			);
 			path = Coach;
+			sourceTree = "<group>";
+		};
+		F51CED1320C184C5008EF850 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F51CED1A20C18612008EF850 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F51CED1E20C186F3008EF850 /* ViewControllerBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED1F20C1871D008EF850 /* ViewControllerBuilder.swift */,
+				F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */,
+			);
+			path = ViewControllerBuilder;
+			sourceTree = "<group>";
+		};
+		F51CED2820C18ABF008EF850 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED2A20C18AF6008EF850 /* Coach.storyboard */,
+				F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */,
+				F51CED2B20C18AF6008EF850 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,10 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51CED0C20C18278008EF850 /* LaunchScreen.storyboard in Resources */,
-				F51CED1220C1835A008EF850 /* Coach.storyboard in Resources */,
 				F51CECE320C17FE2008EF850 /* Assets.xcassets in Resources */,
-				F51CED0B20C18278008EF850 /* Main.storyboard in Resources */,
+				F51CED2E20C18AF6008EF850 /* Coach.storyboard in Resources */,
+				F51CED2C20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */,
+				F51CED3020C18AF6008EF850 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51CED3120C18AF6008EF850 /* Main.storyboard in Resources */,
+				F51CED2D20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */,
+				F51CED2F20C18AF6008EF850 /* Coach.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +316,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F51CECDE20C17FE0008EF850 /* MainViewController.swift in Sources */,
+				F51CED2020C1871D008EF850 /* ViewControllerBuilder.swift in Sources */,
+				F51CED2320C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */,
+				F51CED1C20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift in Sources */,
+				F51CED1820C185A6008EF850 /* StoryboardInstantiable.swift in Sources */,
+				F51CED2620C1882B008EF850 /* AchievementsViewController.swift in Sources */,
 				F51CECDC20C17FE0008EF850 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51CED2720C1882B008EF850 /* AchievementsViewController.swift in Sources */,
+				F51CED2120C1871D008EF850 /* ViewControllerBuilder.swift in Sources */,
+				F51CED1920C185A6008EF850 /* StoryboardInstantiable.swift in Sources */,
 				F51CECF120C17FE2008EF850 /* StashTests.swift in Sources */,
+				F51CED1D20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift in Sources */,
+				F51CED2420C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,33 +347,6 @@
 			targetProxy = F51CECED20C17FE2008EF850 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F51CED0720C18277008EF850 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F51CED0820C18277008EF850 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F51CED0920C18277008EF850 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F51CED0A20C18277008EF850 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F51CED1020C1835A008EF850 /* Coach.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F51CED1120C1835A008EF850 /* Base */,
-			);
-			name = Coach.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F51CECF320C17FE2008EF850 /* Debug */ = {

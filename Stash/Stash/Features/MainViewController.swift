@@ -10,7 +10,16 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+	// MARK: - Lifecycle methods
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
+	}
+}
+
+extension MainViewController: StoryboardInstantiable {
+
+	static var storyboard: UIStoryboard {
+		return UIStoryboard.mainStoryboard
 	}
 }
