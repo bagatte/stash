@@ -24,7 +24,7 @@ struct LocalCoachResource: CoachResource {
 
 	// MARK: - Public properties
 
-	func fetchInverstor(completion: ((Result<Investor>) -> Void)) throws {
+	func fetchInvestor(completion: ((Result<Investor>) -> Void)) throws {
 		let json = try jsonFileReader.contentsOfFile(withFilename: "achievements")
 		let investor: Investor = try jsonParser.parse(json: json)
 

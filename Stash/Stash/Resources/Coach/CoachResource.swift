@@ -10,5 +10,5 @@ import UIKit
 
 protocol CoachResource {
 
-	func fetchInverstor(completion: ((Result<Investor>) -> Void)) throws
+	func fetchInvestor(completion: ((Result<Investor>) -> Void)) throws
 }

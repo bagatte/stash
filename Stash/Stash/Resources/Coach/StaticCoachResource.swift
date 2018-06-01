@@ -24,7 +24,7 @@ struct StaticCoachResource: CoachResource {
 
 	// MARK: - Public properties
 	
-	func fetchInverstor(completion: ((Result<Investor>) -> Void)) throws {
+	func fetchInvestor(completion: ((Result<Investor>) -> Void)) throws {
 		
 	}
 }

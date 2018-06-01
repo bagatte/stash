@@ -23,7 +23,7 @@ class AchievementsViewController: UIViewController {
 		navigationController?.setNavigationBarHidden(false, animated: true)
 
 		do {
-			try resource.fetchInverstor { result in
+			try resource.fetchInvestor { result in
 				switch result {
 				case .success(let investor):
 					print("HEREEE: \(investor)")
