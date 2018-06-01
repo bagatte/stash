@@ -15,8 +15,12 @@ protocol AchievementsBusinessLogic {
 
 class AchievementsInteractor {
 
+	// MARK: - Private properties
+
 	private let presenter: AchievementsPresentationLogic
 	private let resource: CoachResource
+
+	// MARK: - Init
 
 	init(presenter: AchievementsPresentationLogic, resource: CoachResource) {
 		self.presenter = presenter
@@ -33,6 +37,7 @@ extension AchievementsInteractor: AchievementsBusinessLogic {
 			try resource.fetchInvestor { [weak self] result in
 				switch result {
 				case .success(let investor):
+					self?.presenter.presentNavigationBarTitle(investor.title)
 					self?.presenter.presentAchievements(investor.achievements)
 
 				case .error(let error):

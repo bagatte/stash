@@ -27,9 +27,4 @@ enum UtilityError: Error {
 			return "Server status error."
 		}
 	}
-
-	var description: String {
-		return "BRuno Agatte"
-	}
-
 }

@@ -60,6 +60,7 @@
 		F51CED6A20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */; };
 		F51CED6B20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */; };
 		F51CED6E20C1D4DF008EF850 /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */; };
+		F51CED7020C1F509008EF850 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		F51CED6620C1CD05008EF850 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
 		F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
+		F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 			children = (
 				F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */,
 				F51CED3720C18DC7008EF850 /* UIViewController+Extensions.swift */,
+				F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,9 +277,9 @@
 		F51CED2820C18ABF008EF850 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				F51CED2A20C18AF6008EF850 /* Coach.storyboard */,
 				F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */,
 				F51CED2B20C18AF6008EF850 /* Main.storyboard */,
+				F51CED2A20C18AF6008EF850 /* Coach.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				F51CED5220C1B039008EF850 /* CoachResource.swift in Sources */,
 				F51CED1820C185A6008EF850 /* StoryboardInstantiable.swift in Sources */,
 				F51CED6120C1BFFD008EF850 /* Investor.swift in Sources */,
+				F51CED7020C1F509008EF850 /* UIAlertController+Extensions.swift in Sources */,
 				F51CED5820C1B0D6008EF850 /* StaticCoachResource.swift in Sources */,
 				F51CED5B20C1B159008EF850 /* Resources.swift in Sources */,
 				F51CED2620C1882B008EF850 /* AchievementsViewController.swift in Sources */,
