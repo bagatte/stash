@@ -23,7 +23,7 @@ final class CoachRouter {
 	// MARK: - Public methods
 
 	func routeToAchievementsViewController(presentationStyle: PresentationStyle) {
-		let viewController = viewControllerBuilder.achievementsViewController()
+		let viewController = viewControllerBuilder.coachViewController()
 		UIViewController.route(viewController, presentationStyle: presentationStyle)
 	}
 }

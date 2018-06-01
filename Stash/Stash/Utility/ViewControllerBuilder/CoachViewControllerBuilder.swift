@@ -24,8 +24,8 @@ struct CoachViewControllerBuilder {
 
 	// MARK: - Public methods
 
-	func achievementsViewController() -> AchievementsViewController {
-		let viewController = UIStoryboard.instantiateViewControllerOfType(AchievementsViewController.self)
+	func coachViewController() -> CoachViewController {
+		let viewController = UIStoryboard.instantiateViewControllerOfType(CoachViewController.self)
 		viewController.router = router
 		viewController.interactor = AchievementsInteractor(
 			presenter: AchievementsPresenter(viewController: viewController),

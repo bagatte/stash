@@ -1,5 +1,5 @@
 //
-//  AchievementsViewController.swift
+//  CoachViewController.swift
 //  Stash
 //
 //  Created by Bruno Agatte on 6/1/18.
@@ -13,7 +13,7 @@ protocol AchievementsDisplayLogic: class {
 	func displayFetchedAchievements(viewModels: [AchievementViewModel])
 }
 
-class AchievementsViewController: UICollectionViewController {
+class CoachViewController: UICollectionViewController {
 
 	// MARK: - Public properties
 
@@ -47,7 +47,7 @@ class AchievementsViewController: UICollectionViewController {
 
 // MARK: - AchievementsDisplayLogic
 
-extension AchievementsViewController : AchievementsDisplayLogic {
+extension CoachViewController : AchievementsDisplayLogic {
 
 	func displayFetchedAchievements(viewModels: [AchievementViewModel]) {
 		achievementViewModels = viewModels
@@ -57,17 +57,17 @@ extension AchievementsViewController : AchievementsDisplayLogic {
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
-extension AchievementsViewController: UICollectionViewDelegateFlowLayout {
+extension CoachViewController: UICollectionViewDelegateFlowLayout {
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let cellWidth = collectionView.bounds.size.width - 20
+		let cellWidth = collectionView.bounds.size.width - 50
 		return CGSize(width: cellWidth, height: cellWidth / 1.5)
 	}
 }
 
 // MARK: - StoryboardInstantiable
 
-extension AchievementsViewController: StoryboardInstantiable {
+extension CoachViewController: StoryboardInstantiable {
 
 	static var storyboard: UIStoryboard {
 		return UIStoryboard.coachStoryboard
