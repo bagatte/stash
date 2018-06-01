@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F51CECDC20C17FE0008EF850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDB20C17FE0008EF850 /* AppDelegate.swift */; };
-		F51CECDE20C17FE0008EF850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDD20C17FE0008EF850 /* ViewController.swift */; };
-		F51CECE120C17FE0008EF850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CECDF20C17FE0008EF850 /* Main.storyboard */; };
+		F51CECDE20C17FE0008EF850 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDD20C17FE0008EF850 /* MainViewController.swift */; };
 		F51CECE320C17FE2008EF850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51CECE220C17FE2008EF850 /* Assets.xcassets */; };
-		F51CECE620C17FE2008EF850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CECE420C17FE2008EF850 /* LaunchScreen.storyboard */; };
 		F51CECF120C17FE2008EF850 /* StashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECF020C17FE2008EF850 /* StashTests.swift */; };
+		F51CED0B20C18278008EF850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED0720C18277008EF850 /* Main.storyboard */; };
+		F51CED0C20C18278008EF850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED0920C18277008EF850 /* LaunchScreen.storyboard */; };
+		F51CED1220C1835A008EF850 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED1020C1835A008EF850 /* Coach.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +29,15 @@
 /* Begin PBXFileReference section */
 		F51CECD820C17FE0008EF850 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51CECDB20C17FE0008EF850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F51CECDD20C17FE0008EF850 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F51CECE020C17FE0008EF850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F51CECDD20C17FE0008EF850 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F51CECE220C17FE2008EF850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F51CECE520C17FE2008EF850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51CECE720C17FE2008EF850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51CECEC20C17FE2008EF850 /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51CECF020C17FE2008EF850 /* StashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashTests.swift; sourceTree = "<group>"; };
 		F51CECF220C17FE2008EF850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F51CED0820C18277008EF850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Stash/Resources/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		F51CED0A20C18277008EF850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Stash/Resources/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		F51CED1120C1835A008EF850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Stash/Resources/Base.lproj/Coach.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				F51CECDB20C17FE0008EF850 /* AppDelegate.swift */,
-				F51CECDD20C17FE0008EF850 /* ViewController.swift */,
-				F51CECDF20C17FE0008EF850 /* Main.storyboard */,
+				F51CECFB20C18092008EF850 /* Features */,
+				F51CECFC20C180AC008EF850 /* Models */,
+				F51CECFE20C180CE008EF850 /* Utility */,
+				F51CECFD20C180B9008EF850 /* Resources */,
 				F51CECE220C17FE2008EF850 /* Assets.xcassets */,
-				F51CECE420C17FE2008EF850 /* LaunchScreen.storyboard */,
 				F51CECE720C17FE2008EF850 /* Info.plist */,
 			);
 			path = Stash;
@@ -94,6 +97,71 @@
 				F51CECF220C17FE2008EF850 /* Info.plist */,
 			);
 			path = StashTests;
+			sourceTree = "<group>";
+		};
+		F51CECFB20C18092008EF850 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F51CECDD20C17FE0008EF850 /* MainViewController.swift */,
+				F51CED0D20C182CD008EF850 /* Coach */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F51CECFC20C180AC008EF850 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED0E20C182F1008EF850 /* Coach */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F51CECFD20C180B9008EF850 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED0F20C18301008EF850 /* Coach */,
+				F51CED0620C18267008EF850 /* Base.lproj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F51CECFE20C180CE008EF850 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F51CED0620C18267008EF850 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED0920C18277008EF850 /* LaunchScreen.storyboard */,
+				F51CED0720C18277008EF850 /* Main.storyboard */,
+				F51CED1020C1835A008EF850 /* Coach.storyboard */,
+			);
+			name = Base.lproj;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F51CED0D20C182CD008EF850 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		F51CED0E20C182F1008EF850 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		F51CED0F20C18301008EF850 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coach;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +245,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51CECE620C17FE2008EF850 /* LaunchScreen.storyboard in Resources */,
+				F51CED0C20C18278008EF850 /* LaunchScreen.storyboard in Resources */,
+				F51CED1220C1835A008EF850 /* Coach.storyboard in Resources */,
 				F51CECE320C17FE2008EF850 /* Assets.xcassets in Resources */,
-				F51CECE120C17FE0008EF850 /* Main.storyboard in Resources */,
+				F51CED0B20C18278008EF850 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51CECDE20C17FE0008EF850 /* ViewController.swift in Sources */,
+				F51CECDE20C17FE0008EF850 /* MainViewController.swift in Sources */,
 				F51CECDC20C17FE0008EF850 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,20 +290,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F51CECDF20C17FE0008EF850 /* Main.storyboard */ = {
+		F51CED0720C18277008EF850 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F51CECE020C17FE0008EF850 /* Base */,
+				F51CED0820C18277008EF850 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F51CECE420C17FE2008EF850 /* LaunchScreen.storyboard */ = {
+		F51CED0920C18277008EF850 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F51CECE520C17FE2008EF850 /* Base */,
+				F51CED0A20C18277008EF850 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F51CED1020C1835A008EF850 /* Coach.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51CED1120C1835A008EF850 /* Base */,
+			);
+			name = Coach.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
