@@ -17,10 +17,14 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 	@IBOutlet private weak var currentProgressLabel: UILabel!
 	@IBOutlet private weak var totalProgressLabel: UILabel!
 	@IBOutlet private weak var backgroundImageView: UIImageView!
+	@IBOutlet private weak var activityIndicatorView: UIView!
+	@IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
 
 	// MARK: - Public methods
 
 	func layout(withViewModel viewModel: AchievementViewModel) {
+		activityIndicator.startAnimating()
+
 		levelView.layer.cornerRadius = levelView.frame.size.width / 2
 		backgroundImageView.layer.cornerRadius = 10
 		backgroundImageView.layer.masksToBounds = true
@@ -30,8 +34,6 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 		currentProgressLabel.text = viewModel.currentPoints
 		totalProgressLabel.text = viewModel.totalPoints
 
-		alpha = viewModel.isAccessible ? 1 : 0.3
-
 		if let url = viewModel.imageUrl {
 			URLSession.fetchDataFromUrl(url) { (data, urlResponse, error) in
 				guard let data = data else {
@@ -39,7 +41,11 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 				}
 
 				DispatchQueue.main.async { [weak self] in
+					self?.alpha = viewModel.isAccessible ? 1 : 0.3
+
 					self?.backgroundImageView.image = UIImage(data: data)
+					self?.activityIndicator.stopAnimating()
+					self?.activityIndicatorView.isHidden = true
 				}
 			}
 		}
