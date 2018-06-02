@@ -64,6 +64,7 @@
 		F51CED7520C2023C008EF850 /* AchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7320C2023C008EF850 /* AchievementCollectionViewCell.swift */; };
 		F51CED7620C2023C008EF850 /* AchievementCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */; };
 		F51CED7B20C21768008EF850 /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */; };
+		F51DD8C920C2D17400DE0AE8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DD8C820C2D17400DE0AE8 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		F51CED7320C2023C008EF850 /* AchievementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCollectionViewCell.swift; sourceTree = "<group>"; };
 		F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementCollectionViewCell.xib; sourceTree = "<group>"; };
 		F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extensions.swift"; sourceTree = "<group>"; };
+		F51DD8C820C2D17400DE0AE8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 		F51CED3D20C19573008EF850 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
+				F51DD8C820C2D17400DE0AE8 /* Environment.swift */,
 				F51CED3E20C1962F008EF850 /* AppEnvironment.swift */,
 			);
 			path = Environment;
@@ -471,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F51CED4720C1AD16008EF850 /* Model.swift in Sources */,
+				F51DD8C920C2D17400DE0AE8 /* Environment.swift in Sources */,
 				F51CED3420C18C5F008EF850 /* Router.swift in Sources */,
 				F51CED4920C1AD40008EF850 /* JSONParser.swift in Sources */,
 				F51CED4120C1A299008EF850 /* MainRouter.swift in Sources */,

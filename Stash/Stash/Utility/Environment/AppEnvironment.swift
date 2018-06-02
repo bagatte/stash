@@ -8,12 +8,12 @@
 
 import UIKit
 
-final class AppEnvironment {
+final class AppEnvironment: Environment {
 
 	// MARK: - Private properties
 
-	private let jsonFileReader: JSONFileReader = JSONFileReader()
-	private let jsonParser: JSONParser = JSONParser()
+	var jsonFileReader: JSONFileReader = JSONFileReader()
+	var jsonParser: JSONParser = JSONParser()
 
 	// MARK: - Init
 

@@ -15,7 +15,7 @@ protocol AchievementsPresentationLogic {
 	func presentError(_ error: Error)
 }
 
-class AchievementsPresenter {
+struct AchievementsPresenter {
 
 	// MARK: - Private properties
 
