@@ -10,5 +10,9 @@ import UIKit
 
 protocol CoachResource {
 
+	var jsonFileReader: JSONFileReader { get }
+	
+	var jsonParser: JSONParser { get }
+
 	func fetchInvestor(completion: ((Result<Investor>) -> Void)) throws
 }

@@ -12,8 +12,8 @@ struct StaticCoachResource: CoachResource {
 
 	// MARK: - Private properties
 
-	private let jsonFileReader: JSONFileReader
-	private let jsonParser: JSONParser
+	internal var jsonFileReader: JSONFileReader
+	internal var jsonParser: JSONParser
 
 	// MARK: - Init
 
@@ -25,6 +25,15 @@ struct StaticCoachResource: CoachResource {
 	// MARK: - Public properties
 	
 	func fetchInvestor(completion: ((Result<Investor>) -> Void)) throws {
-		
+		let json = try jsonFileReader.contentsOfFile(withFilename: "achievements")
+		let investor: Investor = try jsonParser.parse(json: json)
+
+		if !(200...299 ~= investor.status) {
+			completion(Result.error(UtilityError.serverStatusError))
+		} else if !investor.success {
+			completion(Result.error(UtilityError.serverResponseError))
+		} else {
+			completion(Result.success(value: investor))
+		}
 	}
 }

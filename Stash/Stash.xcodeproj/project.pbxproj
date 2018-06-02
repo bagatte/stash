@@ -10,7 +10,6 @@
 		F51CECDC20C17FE0008EF850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDB20C17FE0008EF850 /* AppDelegate.swift */; };
 		F51CECDE20C17FE0008EF850 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDD20C17FE0008EF850 /* MainViewController.swift */; };
 		F51CECE320C17FE2008EF850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51CECE220C17FE2008EF850 /* Assets.xcassets */; };
-		F51CECF120C17FE2008EF850 /* StashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECF020C17FE2008EF850 /* StashTests.swift */; };
 		F51CED1820C185A6008EF850 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */; };
 		F51CED1920C185A6008EF850 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */; };
 		F51CED1C20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */; };
@@ -65,6 +64,25 @@
 		F51CED7620C2023C008EF850 /* AchievementCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */; };
 		F51CED7B20C21768008EF850 /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */; };
 		F51DD8C920C2D17400DE0AE8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DD8C820C2D17400DE0AE8 /* Environment.swift */; };
+		F52070EA20C338370005D499 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4820C1AD40008EF850 /* JSONParser.swift */; };
+		F52070EB20C33A640005D499 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4620C1AD16008EF850 /* Model.swift */; };
+		F52070EC20C33A6F0005D499 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3320C18C5F008EF850 /* Router.swift */; };
+		F52070EE20C33A7E0005D499 /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */; };
+		F52070EF20C33A870005D499 /* AchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7320C2023C008EF850 /* AchievementCollectionViewCell.swift */; };
+		F52070F020C33A9B0005D499 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */; };
+		F52070F120C33AA60005D499 /* MainViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3B20C193E1008EF850 /* MainViewControllerBuilder.swift */; };
+		F52070F220C33AB80005D499 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4020C1A299008EF850 /* MainRouter.swift */; };
+		F52070F320C33ABF0005D499 /* CoachRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3520C18CE3008EF850 /* CoachRouter.swift */; };
+		F52070F420C33AC70005D499 /* PresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3920C18E04008EF850 /* PresentationStyle.swift */; };
+		F52070F520C33AD40005D499 /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */; };
+		F52070F620C33AE00005D499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDB20C17FE0008EF850 /* AppDelegate.swift */; };
+		F52070F720C33AE80005D499 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3E20C1962F008EF850 /* AppEnvironment.swift */; };
+		F52070F820C33AEC0005D499 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DD8C820C2D17400DE0AE8 /* Environment.swift */; };
+		F52070F920C33AFE0005D499 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3720C18DC7008EF850 /* UIViewController+Extensions.swift */; };
+		F52070FA20C33B080005D499 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDD20C17FE0008EF850 /* MainViewController.swift */; };
+		F52070FC20C349820005D499 /* achievements_test.json in Resources */ = {isa = PBXBuildFile; fileRef = F52070FB20C349820005D499 /* achievements_test.json */; };
+		F52070FE20C34EFF0005D499 /* AchievementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52070FD20C34EFF0005D499 /* AchievementsTests.swift */; };
+		F520710020C34F510005D499 /* JSONParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52070FF20C34F510005D499 /* JSONParserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +102,6 @@
 		F51CECE220C17FE2008EF850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F51CECE720C17FE2008EF850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51CECEC20C17FE2008EF850 /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F51CECF020C17FE2008EF850 /* StashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashTests.swift; sourceTree = "<group>"; };
 		F51CECF220C17FE2008EF850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+StoryboardInstantiable.swift"; sourceTree = "<group>"; };
@@ -121,6 +138,9 @@
 		F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementCollectionViewCell.xib; sourceTree = "<group>"; };
 		F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extensions.swift"; sourceTree = "<group>"; };
 		F51DD8C820C2D17400DE0AE8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		F52070FB20C349820005D499 /* achievements_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements_test.json; sourceTree = "<group>"; };
+		F52070FD20C34EFF0005D499 /* AchievementsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsTests.swift; sourceTree = "<group>"; };
+		F52070FF20C34F510005D499 /* JSONParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +196,7 @@
 		F51CECEF20C17FE2008EF850 /* StashTests */ = {
 			isa = PBXGroup;
 			children = (
-				F51CECF020C17FE2008EF850 /* StashTests.swift */,
+				F52070E720C335620005D499 /* Coach */,
 				F51CECF220C17FE2008EF850 /* Info.plist */,
 			);
 			path = StashTests;
@@ -313,6 +333,7 @@
 		F51CED4220C1AC17008EF850 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				F52070FB20C349820005D499 /* achievements_test.json */,
 				F51CED4320C1AC47008EF850 /* achievements.json */,
 			);
 			path = JSON;
@@ -364,6 +385,15 @@
 				F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F52070E720C335620005D499 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				F52070FD20C34EFF0005D499 /* AchievementsTests.swift */,
+				F52070FF20C34F510005D499 /* JSONParserTests.swift */,
+			);
+			path = Coach;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +482,7 @@
 				F51CED2E20C18AF6008EF850 /* Coach.storyboard in Resources */,
 				F51CED2C20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */,
 				F51CED7620C2023C008EF850 /* AchievementCollectionViewCell.xib in Resources */,
+				F52070FC20C349820005D499 /* achievements_test.json in Resources */,
 				F51CED3020C18AF6008EF850 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,19 +545,36 @@
 			files = (
 				F51CED5320C1B039008EF850 /* CoachResource.swift in Sources */,
 				F51CED2720C1882B008EF850 /* AchievementsViewController.swift in Sources */,
+				F52070EA20C338370005D499 /* JSONParser.swift in Sources */,
 				F51CED5620C1B091008EF850 /* LocalCoachResource.swift in Sources */,
+				F52070F620C33AE00005D499 /* AppDelegate.swift in Sources */,
+				F52070F720C33AE80005D499 /* AppEnvironment.swift in Sources */,
+				F52070FE20C34EFF0005D499 /* AchievementsTests.swift in Sources */,
 				F51CED6B20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */,
+				F520710020C34F510005D499 /* JSONParserTests.swift in Sources */,
+				F52070EE20C33A7E0005D499 /* AchievementViewModel.swift in Sources */,
 				F51CED2120C1871D008EF850 /* ViewControllerBuilder.swift in Sources */,
 				F51CED4D20C1ADEA008EF850 /* UtilityError.swift in Sources */,
+				F52070F420C33AC70005D499 /* PresentationStyle.swift in Sources */,
 				F51CED6220C1BFFD008EF850 /* Investor.swift in Sources */,
+				F52070FA20C33B080005D499 /* MainViewController.swift in Sources */,
 				F51CED6520C1CA26008EF850 /* Result.swift in Sources */,
 				F51CED5920C1B0D6008EF850 /* StaticCoachResource.swift in Sources */,
+				F52070F520C33AD40005D499 /* URLSession+Extensions.swift in Sources */,
+				F52070F320C33ABF0005D499 /* CoachRouter.swift in Sources */,
 				F51CED1920C185A6008EF850 /* StoryboardInstantiable.swift in Sources */,
+				F52070EF20C33A870005D499 /* AchievementCollectionViewCell.swift in Sources */,
+				F52070F120C33AA60005D499 /* MainViewControllerBuilder.swift in Sources */,
+				F52070F820C33AEC0005D499 /* Environment.swift in Sources */,
 				F51CED5020C1AE8D008EF850 /* JSONFileReader.swift in Sources */,
-				F51CECF120C17FE2008EF850 /* StashTests.swift in Sources */,
+				F52070F220C33AB80005D499 /* MainRouter.swift in Sources */,
+				F52070F020C33A9B0005D499 /* UIAlertController+Extensions.swift in Sources */,
+				F52070EC20C33A6F0005D499 /* Router.swift in Sources */,
 				F51CED5F20C1B4B2008EF850 /* Achievement.swift in Sources */,
 				F51CED5C20C1B159008EF850 /* Resources.swift in Sources */,
 				F51CED1D20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift in Sources */,
+				F52070F920C33AFE0005D499 /* UIViewController+Extensions.swift in Sources */,
+				F52070EB20C33A640005D499 /* Model.swift in Sources */,
 				F51CED6820C1CD05008EF850 /* AchievementsInteractor.swift in Sources */,
 				F51CED2420C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */,
 			);

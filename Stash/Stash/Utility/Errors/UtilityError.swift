@@ -14,6 +14,7 @@ enum UtilityError: Error {
 	case jsonParserDecodingFailure
 	case jsonParserInvalidJSON
 	case serverStatusError
+	case serverResponseError
 
 	var localizedDescription: String {
 		switch self {
@@ -25,6 +26,8 @@ enum UtilityError: Error {
 			return "Error transforming JSON into valid format."
 		case .serverStatusError:
 			return "Server status error."
+		case .serverResponseError:
+			return "Server response error."
 		}
 	}
 }
