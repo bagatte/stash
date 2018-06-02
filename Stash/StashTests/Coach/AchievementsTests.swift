@@ -24,14 +24,24 @@ class AchievementsTests: XCTestCase, CoachResource {
 		investorTest = try! jsonParser.parse(json: json) as Investor
     }
 
+	func testInvestorTitle() {
+		try! fetchInvestor { result in
+			switch result {
+			case .success(let investor):
+				XCTAssertEqual(investor.title, investorTest.title, "Title doesn't match.")
+			case .error(let error):
+				testError(error)
+			}
+		}
+	}
+
 	func testFetchAchievements() {
-		try! fetchInvestor(completion: { result in
+		try! fetchInvestor { result in
 			switch result {
 			case .success(let investor):
 				let achievements: [Achievement]? = investor.achievements
 
 				XCTAssertNotNil(achievements)
-				XCTAssertEqual(investor.title, investorTest.title, "Title doesn't match.")
 
 				for i in 0..<achievements!.count {
 					XCTAssertEqual(achievements![i].id, investorTest.achievements![i].id)
@@ -45,7 +55,7 @@ class AchievementsTests: XCTestCase, CoachResource {
 			case .error(let error):
 				testError(error)
 			}
-		})
+		}
 	}
 
 	func testAchievementViewModel() {
