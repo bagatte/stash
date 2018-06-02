@@ -15,6 +15,9 @@ protocol AchievementsDisplayLogic: class {
 
 class AchievementsViewController: UICollectionViewController {
 
+	static let cellNibName: String = "AchievementCollectionViewCell"
+	static let cellIdentifier: String = "AchievementCell"
+
 	// MARK: - Public properties
 
 	var interactor: AchievementsBusinessLogic!
@@ -29,6 +32,10 @@ class AchievementsViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+		collectionView?
+			.register(UINib(nibName: AchievementsViewController.cellNibName, bundle: nil),
+					  forCellWithReuseIdentifier: AchievementsViewController.cellIdentifier)
+
 		interactor.fetchAchievements()
     }
 
@@ -39,8 +46,17 @@ class AchievementsViewController: UICollectionViewController {
 	}
 
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StashCell", for: indexPath)
-		cell.backgroundColor = UIColor.blue
+		guard
+			let cell = collectionView
+				.dequeueReusableCell(withReuseIdentifier: AchievementsViewController.cellIdentifier,
+									 for: indexPath) as? AchievementCollectionViewCell,
+			let viewModel = achievementViewModels?[indexPath.row] else {
+				return UICollectionViewCell()
+		}
+
+		cell.layoutIfNeeded()
+		cell.layout(withViewModel: viewModel)
+
 		return cell
 	}
 }

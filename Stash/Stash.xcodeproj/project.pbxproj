@@ -61,6 +61,9 @@
 		F51CED6B20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */; };
 		F51CED6E20C1D4DF008EF850 /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */; };
 		F51CED7020C1F509008EF850 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */; };
+		F51CED7520C2023C008EF850 /* AchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7320C2023C008EF850 /* AchievementCollectionViewCell.swift */; };
+		F51CED7620C2023C008EF850 /* AchievementCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */; };
+		F51CED7B20C21768008EF850 /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
 		F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		F51CED7320C2023C008EF850 /* AchievementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCollectionViewCell.swift; sourceTree = "<group>"; };
+		F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementCollectionViewCell.xib; sourceTree = "<group>"; };
+		F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +263,7 @@
 				F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */,
 				F51CED3720C18DC7008EF850 /* UIViewController+Extensions.swift */,
 				F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */,
+				F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -338,12 +345,22 @@
 		F51CED7120C20124008EF850 /* Achievements */ = {
 			isa = PBXGroup;
 			children = (
+				F51CED7220C201FA008EF850 /* Views */,
 				F51CED6C20C1D4BD008EF850 /* ViewModels */,
 				F51CED2520C1882B008EF850 /* AchievementsViewController.swift */,
 				F51CED6620C1CD05008EF850 /* AchievementsInteractor.swift */,
 				F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */,
 			);
 			path = Achievements;
+			sourceTree = "<group>";
+		};
+		F51CED7220C201FA008EF850 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED7320C2023C008EF850 /* AchievementCollectionViewCell.swift */,
+				F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +448,7 @@
 				F51CED4420C1AC47008EF850 /* achievements.json in Resources */,
 				F51CED2E20C18AF6008EF850 /* Coach.storyboard in Resources */,
 				F51CED2C20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */,
+				F51CED7620C2023C008EF850 /* AchievementCollectionViewCell.xib in Resources */,
 				F51CED3020C18AF6008EF850 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,8 +478,10 @@
 				F51CECDE20C17FE0008EF850 /* MainViewController.swift in Sources */,
 				F51CED6E20C1D4DF008EF850 /* AchievementViewModel.swift in Sources */,
 				F51CED6420C1CA26008EF850 /* Result.swift in Sources */,
+				F51CED7B20C21768008EF850 /* URLSession+Extensions.swift in Sources */,
 				F51CED3820C18DC7008EF850 /* UIViewController+Extensions.swift in Sources */,
 				F51CED6720C1CD05008EF850 /* AchievementsInteractor.swift in Sources */,
+				F51CED7520C2023C008EF850 /* AchievementCollectionViewCell.swift in Sources */,
 				F51CED3620C18CE3008EF850 /* CoachRouter.swift in Sources */,
 				F51CED2020C1871D008EF850 /* ViewControllerBuilder.swift in Sources */,
 				F51CED4C20C1ADE7008EF850 /* UtilityError.swift in Sources */,

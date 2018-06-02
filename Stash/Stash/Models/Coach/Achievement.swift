@@ -22,7 +22,7 @@ struct Achievement: Model {
 			let id: Int = json["id"] as? Int,
 			let level: String = json["level"] as? String,
 			let progress: Int = json["progress"] as? Int,
-			let total: Int = json["progress"] as? Int,
+			let total: Int = json["total"] as? Int,
 			let backgroundImageUrl: String = json["bg_image_url"] as? String,
 			let isAccessible: Bool = json["accessible"] as? Bool else {
 				return nil
