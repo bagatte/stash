@@ -70,7 +70,9 @@ class AchievementsTests: XCTestCase, CoachResource {
 					XCTAssertEqual(viewModel.level, achievement.level)
 					XCTAssertEqual(viewModel.currentPoints, "\(String(achievement.progress))pts")
 					XCTAssertEqual(viewModel.totalPoints, "\(String(achievement.total))pts")
-					XCTAssertEqual(viewModel.completionPercentage, 0)
+					XCTAssertEqual(viewModel.completionPercentage,
+								   AchievementViewModel.calculatePercentage(min: achievement.progress,
+																			max: achievement.total))
 					XCTAssertEqual(viewModel.imageUrl, URL(string: achievement.backgroundImageUrl))
 					XCTAssertEqual(viewModel.isAccessible, achievement.isAccessible)
 				}

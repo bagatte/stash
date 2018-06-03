@@ -31,12 +31,22 @@
                                     <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Dq-qC-Etz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRUNO AGATTE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-cO-gmg">
+                                <rect key="frame" x="20" y="317" width="335" height="34.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JSW-Q6-AS3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2vS-38-13t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JSW-Q6-AS3" secondAttribute="trailing" constant="16" id="4Bf-YS-w0e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JSW-Q6-AS3" secondAttribute="bottom" constant="20" id="Fy3-rU-C2Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xDM-cO-gmg" secondAttribute="trailing" constant="20" id="Vop-kL-Bjl"/>
+                            <constraint firstItem="xDM-cO-gmg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gN2-zz-Q6y"/>
+                            <constraint firstItem="xDM-cO-gmg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iEn-zz-4PG"/>
+                            <constraint firstItem="xDM-cO-gmg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qEa-Pe-SSB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -15,11 +15,14 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 	@IBOutlet private weak var levelView: UIView!
 	@IBOutlet private weak var levelNumberLabel: UILabel!
 	@IBOutlet private weak var currentProgressLabel: UILabel!
+	@IBOutlet private weak var progressBarView: UIView!
+	@IBOutlet private weak var progressBarContainerView: UIView!
 	@IBOutlet private weak var totalProgressLabel: UILabel!
 	@IBOutlet private weak var backgroundImageView: UIImageView!
 	@IBOutlet private weak var activityIndicatorView: UIView!
 	@IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
-
+	@IBOutlet private weak var progressBarViewTraillingConstraint: NSLayoutConstraint!
+	
 	// MARK: - Public methods
 
 	func layout(withViewModel viewModel: AchievementViewModel) {
@@ -29,10 +32,18 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 		backgroundImageView.layer.cornerRadius = 10
 		backgroundImageView.layer.masksToBounds = true
 
+		progressBarContainerView.layer.cornerRadius = 5
+		progressBarView.layer.cornerRadius = 5
+
 		levelNumberLabel.text = viewModel.level
 
 		currentProgressLabel.text = viewModel.currentPoints
 		totalProgressLabel.text = viewModel.totalPoints
+
+		let newProgressBarWidth = calculateProgressBarCompletion(
+			fromPercentage: viewModel.completionPercentage,
+			inView: progressBarContainerView
+		)
 
 		if let url = viewModel.imageUrl {
 			URLSession.fetchDataFromUrl(url) { (data, urlResponse, error) in
@@ -46,7 +57,11 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 					self?.backgroundImageView.image = UIImage(data: data)
 					self?.activityIndicator.stopAnimating()
 
-					UIView.animate(withDuration: 0.5, animations: {
+					if let progressBarContainerViewWidth = self?.progressBarContainerView.frame.size.width {
+						self?.progressBarViewTraillingConstraint.constant = progressBarContainerViewWidth - newProgressBarWidth
+					}
+
+					UIView.animate(withDuration: 0.5, animations: { [weak self] in
 						self?.activityIndicatorView.alpha = 0
 					}, completion: { [weak self] _ in
 						self?.activityIndicatorView.isHidden = true
@@ -54,5 +69,11 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 				}
 			}
 		}
+	}
+
+	private func calculateProgressBarCompletion(fromPercentage percentage: Int, inView view: UIView) -> CGFloat {
+		let total = CGFloat(percentage) * view.frame.size.width
+		let width = total / 100
+		return width
 	}
 }

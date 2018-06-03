@@ -21,8 +21,14 @@ struct AchievementViewModel {
 		level = achievement.level
 		currentPoints = "\(String(achievement.progress))pts"
 		totalPoints = "\(String(achievement.total))pts"
-		completionPercentage = 0
+		completionPercentage = AchievementViewModel.calculatePercentage(min: achievement.progress, max: achievement.total)
 		imageUrl = URL(string: achievement.backgroundImageUrl)
 		isAccessible = achievement.isAccessible
+	}
+
+	static func calculatePercentage(min: Int, max: Int) -> Int {
+		let total = min * 100
+		let percentage = total / max
+		return percentage
 	}
 }

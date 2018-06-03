@@ -39,9 +39,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="747" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zgc-az-XK7">
-                                        <rect key="frame" x="5" y="46" width="172" height="115"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="747" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zgc-az-XK7">
+                                        <rect key="frame" x="5" y="41" width="172" height="120"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="bottom" secondItem="Zgc-az-XK7" secondAttribute="bottom" constant="20" id="LqU-89-hRW"/>
                                     <constraint firstAttribute="width" secondItem="4BL-Go-Mcw" secondAttribute="height" multiplier="182:181" id="RU8-n4-m2y"/>
                                     <constraint firstAttribute="trailing" secondItem="r3i-sf-3Cq" secondAttribute="trailing" constant="10" id="Ub4-gc-7T5"/>
-                                    <constraint firstItem="Zgc-az-XK7" firstAttribute="top" secondItem="r3i-sf-3Cq" secondAttribute="bottom" constant="5" id="Vu0-IG-lKU"/>
+                                    <constraint firstItem="Zgc-az-XK7" firstAttribute="top" secondItem="r3i-sf-3Cq" secondAttribute="bottom" id="Vu0-IG-lKU"/>
                                     <constraint firstItem="Zgc-az-XK7" firstAttribute="leading" secondItem="4BL-Go-Mcw" secondAttribute="leading" constant="5" id="guO-se-Sjw"/>
                                     <constraint firstItem="r3i-sf-3Cq" firstAttribute="leading" secondItem="4BL-Go-Mcw" secondAttribute="leading" constant="10" id="h9T-fX-5M1"/>
                                     <constraint firstItem="r3i-sf-3Cq" firstAttribute="top" secondItem="4BL-Go-Mcw" secondAttribute="top" constant="20" id="pbK-Cl-dqa"/>
@@ -69,9 +69,19 @@
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjZ-3a-AvY">
                         <rect key="frame" x="20" y="211" width="405" height="10"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQN-3Q-I0z">
+                                <rect key="frame" x="0.0" y="0.0" width="405" height="10"/>
+                                <color key="backgroundColor" red="0.45882352941176469" green="0.78431372549019607" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cQN-3Q-I0z" secondAttribute="trailing" id="3ad-xc-CgF"/>
                             <constraint firstAttribute="height" constant="10" id="Yyv-nv-eoi"/>
+                            <constraint firstAttribute="bottom" secondItem="cQN-3Q-I0z" secondAttribute="bottom" id="bHs-HV-E0x"/>
+                            <constraint firstItem="cQN-3Q-I0z" firstAttribute="leading" secondItem="rjZ-3a-AvY" secondAttribute="leading" id="bWg-VQ-c7n"/>
+                            <constraint firstItem="cQN-3Q-I0z" firstAttribute="top" secondItem="rjZ-3a-AvY" secondAttribute="top" id="deR-kJ-pg3"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0pts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yre-Dp-PZA">
@@ -137,6 +147,9 @@
                 <outlet property="currentProgressLabel" destination="Yre-Dp-PZA" id="FfV-m0-ZCP"/>
                 <outlet property="levelNumberLabel" destination="Zgc-az-XK7" id="4yQ-A8-mUI"/>
                 <outlet property="levelView" destination="4BL-Go-Mcw" id="5D8-9G-YAL"/>
+                <outlet property="progressBarContainerView" destination="rjZ-3a-AvY" id="tJc-nV-16q"/>
+                <outlet property="progressBarView" destination="cQN-3Q-I0z" id="1HM-1X-IAz"/>
+                <outlet property="progressBarViewTraillingConstraint" destination="3ad-xc-CgF" id="6AP-rB-a4F"/>
                 <outlet property="totalProgressLabel" destination="cuD-Uz-RL5" id="mZk-CD-E1C"/>
             </connections>
             <point key="canvasLocation" x="-281.5" y="40.5"/>
