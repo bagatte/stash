@@ -43,11 +43,13 @@ class AchievementsViewController: UICollectionViewController {
 
 	// MARK: - UICollectionViewDataSource
 
-	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+	override func collectionView(_ collectionView: UICollectionView,
+								 numberOfItemsInSection section: Int) -> Int {
 		return achievementViewModels?.count ?? 0
 	}
 
-	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+	override func collectionView(_ collectionView: UICollectionView,
+								 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		guard
 			let cell = collectionView
 				.dequeueReusableCell(withReuseIdentifier: AchievementsViewController.cellIdentifier,
@@ -77,7 +79,9 @@ extension AchievementsViewController : AchievementsDisplayLogic {
 
 extension AchievementsViewController: UICollectionViewDelegateFlowLayout {
 
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+	func collectionView(_ collectionView: UICollectionView,
+						layout collectionViewLayout: UICollectionViewLayout,
+						sizeForItemAt indexPath: IndexPath) -> CGSize {
 		let cellWidth = collectionView.bounds.size.width - 50
 		return CGSize(width: cellWidth, height: cellWidth / 1.5)
 	}

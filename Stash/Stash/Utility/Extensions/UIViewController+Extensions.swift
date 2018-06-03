@@ -18,7 +18,19 @@ extension UIViewController {
 			}
 			navigationController.pushViewController(viewController, animated: true)
 		case .present(let presenter):
-			presenter.present(viewController, animated: true, completion: nil)
+			if presenter is UINavigationController {
+				presenter.present(viewController, animated: true, completion: nil)
+			} else {
+				let navigationController = UINavigationController(rootViewController: viewController)
+				viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
+																	target: nil,
+																	action: #selector(doneButtonTapped))
+				presenter.present(navigationController, animated: true, completion: nil)
+			}
 		}
+	}
+
+	@objc private func doneButtonTapped() {
+		presentingViewController?.dismiss(animated: true, completion: nil)
 	}
 }
