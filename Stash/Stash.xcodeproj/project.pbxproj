@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F51CECDC20C17FE0008EF850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDB20C17FE0008EF850 /* AppDelegate.swift */; };
+		F51CECDE20C17FE0008EF850 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDD20C17FE0008EF850 /* MainViewController.swift */; };
+		F51CECE320C17FE2008EF850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51CECE220C17FE2008EF850 /* Assets.xcassets */; };
+		F51CED1820C185A6008EF850 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */; };
+		F51CED1920C185A6008EF850 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */; };
+		F51CED1C20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */; };
+		F51CED1D20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */; };
+		F51CED2020C1871D008EF850 /* ViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1F20C1871D008EF850 /* ViewControllerBuilder.swift */; };
+		F51CED2120C1871D008EF850 /* ViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED1F20C1871D008EF850 /* ViewControllerBuilder.swift */; };
+		F51CED2320C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */; };
+		F51CED2420C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */; };
+		F51CED2620C1882B008EF850 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2520C1882B008EF850 /* AchievementsViewController.swift */; };
+		F51CED2720C1882B008EF850 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED2520C1882B008EF850 /* AchievementsViewController.swift */; };
+		F51CED2C20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */; };
+		F51CED2D20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */; };
+		F51CED2E20C18AF6008EF850 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2A20C18AF6008EF850 /* Coach.storyboard */; };
+		F51CED2F20C18AF6008EF850 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2A20C18AF6008EF850 /* Coach.storyboard */; };
+		F51CED3020C18AF6008EF850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2B20C18AF6008EF850 /* Main.storyboard */; };
+		F51CED3120C18AF6008EF850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51CED2B20C18AF6008EF850 /* Main.storyboard */; };
+		F51CED3420C18C5F008EF850 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3320C18C5F008EF850 /* Router.swift */; };
+		F51CED3620C18CE3008EF850 /* CoachRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3520C18CE3008EF850 /* CoachRouter.swift */; };
+		F51CED3820C18DC7008EF850 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3720C18DC7008EF850 /* UIViewController+Extensions.swift */; };
+		F51CED3A20C18E04008EF850 /* PresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3920C18E04008EF850 /* PresentationStyle.swift */; };
+		F51CED3C20C193E1008EF850 /* MainViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3B20C193E1008EF850 /* MainViewControllerBuilder.swift */; };
+		F51CED3F20C1962F008EF850 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3E20C1962F008EF850 /* AppEnvironment.swift */; };
+		F51CED4120C1A299008EF850 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4020C1A299008EF850 /* MainRouter.swift */; };
+		F51CED4420C1AC47008EF850 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = F51CED4320C1AC47008EF850 /* achievements.json */; };
+		F51CED4720C1AD16008EF850 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4620C1AD16008EF850 /* Model.swift */; };
+		F51CED4920C1AD40008EF850 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4820C1AD40008EF850 /* JSONParser.swift */; };
+		F51CED4C20C1ADE7008EF850 /* UtilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4B20C1ADE7008EF850 /* UtilityError.swift */; };
+		F51CED4D20C1ADEA008EF850 /* UtilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4B20C1ADE7008EF850 /* UtilityError.swift */; };
+		F51CED4F20C1AE8D008EF850 /* JSONFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4E20C1AE8D008EF850 /* JSONFileReader.swift */; };
+		F51CED5020C1AE8D008EF850 /* JSONFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4E20C1AE8D008EF850 /* JSONFileReader.swift */; };
+		F51CED5220C1B039008EF850 /* CoachResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED5120C1B039008EF850 /* CoachResource.swift */; };
+		F51CED5320C1B039008EF850 /* CoachResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED5120C1B039008EF850 /* CoachResource.swift */; };
+		F51CED5520C1B091008EF850 /* LocalCoachResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED5420C1B091008EF850 /* LocalCoachResource.swift */; };
+		F51CED5620C1B091008EF850 /* LocalCoachResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED5420C1B091008EF850 /* LocalCoachResource.swift */; };
+		F51CED5820C1B0D6008EF850 /* StaticCoachResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED5720C1B0D6008EF850 /* StaticCoachResource.swift */; };
+		F51CED5920C1B0D6008EF850 /* StaticCoachResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED5720C1B0D6008EF850 /* StaticCoachResource.swift */; };
+		F51CED5B20C1B159008EF850 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED5A20C1B159008EF850 /* Resources.swift */; };
+		F51CED5C20C1B159008EF850 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED5A20C1B159008EF850 /* Resources.swift */; };
+		F51CED5E20C1B4B2008EF850 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED5D20C1B4B2008EF850 /* Achievement.swift */; };
+		F51CED5F20C1B4B2008EF850 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED5D20C1B4B2008EF850 /* Achievement.swift */; };
+		F51CED6120C1BFFD008EF850 /* Investor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6020C1BFFD008EF850 /* Investor.swift */; };
+		F51CED6220C1BFFD008EF850 /* Investor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6020C1BFFD008EF850 /* Investor.swift */; };
+		F51CED6420C1CA26008EF850 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6320C1CA26008EF850 /* Result.swift */; };
+		F51CED6520C1CA26008EF850 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6320C1CA26008EF850 /* Result.swift */; };
+		F51CED6720C1CD05008EF850 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6620C1CD05008EF850 /* AchievementsInteractor.swift */; };
+		F51CED6820C1CD05008EF850 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6620C1CD05008EF850 /* AchievementsInteractor.swift */; };
+		F51CED6A20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */; };
+		F51CED6B20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */; };
+		F51CED6E20C1D4DF008EF850 /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */; };
+		F51CED7020C1F509008EF850 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */; };
+		F51CED7520C2023C008EF850 /* AchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7320C2023C008EF850 /* AchievementCollectionViewCell.swift */; };
+		F51CED7620C2023C008EF850 /* AchievementCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */; };
+		F51CED7B20C21768008EF850 /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */; };
+		F51DD8C920C2D17400DE0AE8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DD8C820C2D17400DE0AE8 /* Environment.swift */; };
+		F52070EA20C338370005D499 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4820C1AD40008EF850 /* JSONParser.swift */; };
+		F52070EB20C33A640005D499 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4620C1AD16008EF850 /* Model.swift */; };
+		F52070EC20C33A6F0005D499 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3320C18C5F008EF850 /* Router.swift */; };
+		F52070EE20C33A7E0005D499 /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */; };
+		F52070EF20C33A870005D499 /* AchievementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7320C2023C008EF850 /* AchievementCollectionViewCell.swift */; };
+		F52070F020C33A9B0005D499 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */; };
+		F52070F120C33AA60005D499 /* MainViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3B20C193E1008EF850 /* MainViewControllerBuilder.swift */; };
+		F52070F220C33AB80005D499 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED4020C1A299008EF850 /* MainRouter.swift */; };
+		F52070F320C33ABF0005D499 /* CoachRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3520C18CE3008EF850 /* CoachRouter.swift */; };
+		F52070F420C33AC70005D499 /* PresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3920C18E04008EF850 /* PresentationStyle.swift */; };
+		F52070F520C33AD40005D499 /* URLSession+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */; };
+		F52070F620C33AE00005D499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDB20C17FE0008EF850 /* AppDelegate.swift */; };
+		F52070F720C33AE80005D499 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3E20C1962F008EF850 /* AppEnvironment.swift */; };
+		F52070F820C33AEC0005D499 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51DD8C820C2D17400DE0AE8 /* Environment.swift */; };
+		F52070F920C33AFE0005D499 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CED3720C18DC7008EF850 /* UIViewController+Extensions.swift */; };
+		F52070FA20C33B080005D499 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CECDD20C17FE0008EF850 /* MainViewController.swift */; };
+		F52070FC20C349820005D499 /* achievements_test.json in Resources */ = {isa = PBXBuildFile; fileRef = F52070FB20C349820005D499 /* achievements_test.json */; };
+		F52070FE20C34EFF0005D499 /* AchievementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52070FD20C34EFF0005D499 /* AchievementsTests.swift */; };
+		F520710020C34F510005D499 /* JSONParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52070FF20C34F510005D499 /* JSONParserTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F51CECED20C17FE2008EF850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F51CECD020C17FE0008EF850 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F51CECD720C17FE0008EF850;
+			remoteInfo = Stash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F51CECD820C17FE0008EF850 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51CECDB20C17FE0008EF850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F51CECDD20C17FE0008EF850 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F51CECE220C17FE2008EF850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F51CECE720C17FE2008EF850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F51CECEC20C17FE2008EF850 /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51CECF220C17FE2008EF850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+StoryboardInstantiable.swift"; sourceTree = "<group>"; };
+		F51CED1F20C1871D008EF850 /* ViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuilder.swift; sourceTree = "<group>"; };
+		F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewControllerBuilder.swift; sourceTree = "<group>"; };
+		F51CED2520C1882B008EF850 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F51CED2A20C18AF6008EF850 /* Coach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
+		F51CED2B20C18AF6008EF850 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F51CED3320C18C5F008EF850 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F51CED3520C18CE3008EF850 /* CoachRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachRouter.swift; sourceTree = "<group>"; };
+		F51CED3720C18DC7008EF850 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F51CED3920C18E04008EF850 /* PresentationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStyle.swift; sourceTree = "<group>"; };
+		F51CED3B20C193E1008EF850 /* MainViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerBuilder.swift; sourceTree = "<group>"; };
+		F51CED3E20C1962F008EF850 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		F51CED4020C1A299008EF850 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		F51CED4320C1AC47008EF850 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		F51CED4620C1AD16008EF850 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F51CED4820C1AD40008EF850 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		F51CED4B20C1ADE7008EF850 /* UtilityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityError.swift; sourceTree = "<group>"; };
+		F51CED4E20C1AE8D008EF850 /* JSONFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileReader.swift; sourceTree = "<group>"; };
+		F51CED5120C1B039008EF850 /* CoachResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachResource.swift; sourceTree = "<group>"; };
+		F51CED5420C1B091008EF850 /* LocalCoachResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCoachResource.swift; sourceTree = "<group>"; };
+		F51CED5720C1B0D6008EF850 /* StaticCoachResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCoachResource.swift; sourceTree = "<group>"; };
+		F51CED5A20C1B159008EF850 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		F51CED5D20C1B4B2008EF850 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		F51CED6020C1BFFD008EF850 /* Investor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investor.swift; sourceTree = "<group>"; };
+		F51CED6320C1CA26008EF850 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F51CED6620C1CD05008EF850 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
+		F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
+		F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
+		F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		F51CED7320C2023C008EF850 /* AchievementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCollectionViewCell.swift; sourceTree = "<group>"; };
+		F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementCollectionViewCell.xib; sourceTree = "<group>"; };
+		F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extensions.swift"; sourceTree = "<group>"; };
+		F51DD8C820C2D17400DE0AE8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		F52070FB20C349820005D499 /* achievements_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements_test.json; sourceTree = "<group>"; };
+		F52070FD20C34EFF0005D499 /* AchievementsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsTests.swift; sourceTree = "<group>"; };
+		F52070FF20C34F510005D499 /* JSONParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParserTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F51CECD520C17FE0008EF850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51CECE920C17FE2008EF850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F51CECCF20C17FE0008EF850 = {
+			isa = PBXGroup;
+			children = (
+				F51CECDA20C17FE0008EF850 /* Stash */,
+				F51CECEF20C17FE2008EF850 /* StashTests */,
+				F51CECD920C17FE0008EF850 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F51CECD920C17FE0008EF850 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F51CECD820C17FE0008EF850 /* Stash.app */,
+				F51CECEC20C17FE2008EF850 /* StashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F51CECDA20C17FE0008EF850 /* Stash */ = {
+			isa = PBXGroup;
+			children = (
+				F51CECDB20C17FE0008EF850 /* AppDelegate.swift */,
+				F51CECFB20C18092008EF850 /* Features */,
+				F51CECFC20C180AC008EF850 /* Models */,
+				F51CECFE20C180CE008EF850 /* Utility */,
+				F51CECFD20C180B9008EF850 /* Resources */,
+				F51CECE220C17FE2008EF850 /* Assets.xcassets */,
+				F51CECE720C17FE2008EF850 /* Info.plist */,
+			);
+			path = Stash;
+			sourceTree = "<group>";
+		};
+		F51CECEF20C17FE2008EF850 /* StashTests */ = {
+			isa = PBXGroup;
+			children = (
+				F52070E720C335620005D499 /* Coach */,
+				F51CECF220C17FE2008EF850 /* Info.plist */,
+			);
+			path = StashTests;
+			sourceTree = "<group>";
+		};
+		F51CECFB20C18092008EF850 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F51CECDD20C17FE0008EF850 /* MainViewController.swift */,
+				F51CED0D20C182CD008EF850 /* Coach */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F51CECFC20C180AC008EF850 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED0E20C182F1008EF850 /* Coach */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F51CECFD20C180B9008EF850 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED5A20C1B159008EF850 /* Resources.swift */,
+				F51CED0F20C18301008EF850 /* Coach */,
+				F51CED2820C18ABF008EF850 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F51CECFE20C180CE008EF850 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED4A20C1ADC8008EF850 /* Errors */,
+				F51CED4520C1AD0A008EF850 /* JSON */,
+				F51CED3D20C19573008EF850 /* Environment */,
+				F51CED1A20C18612008EF850 /* Extensions */,
+				F51CED1320C184C5008EF850 /* Storyboard */,
+				F51CED3220C18C2B008EF850 /* Router */,
+				F51CED1E20C186F3008EF850 /* ViewControllerBuilder */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F51CED0D20C182CD008EF850 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED7120C20124008EF850 /* Achievements */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		F51CED0E20C182F1008EF850 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED5D20C1B4B2008EF850 /* Achievement.swift */,
+				F51CED6020C1BFFD008EF850 /* Investor.swift */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		F51CED0F20C18301008EF850 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED4220C1AC17008EF850 /* JSON */,
+				F51CED5120C1B039008EF850 /* CoachResource.swift */,
+				F51CED5420C1B091008EF850 /* LocalCoachResource.swift */,
+				F51CED5720C1B0D6008EF850 /* StaticCoachResource.swift */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		F51CED1320C184C5008EF850 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED1720C185A6008EF850 /* StoryboardInstantiable.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F51CED1A20C18612008EF850 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED1B20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift */,
+				F51CED3720C18DC7008EF850 /* UIViewController+Extensions.swift */,
+				F51CED6F20C1F509008EF850 /* UIAlertController+Extensions.swift */,
+				F51CED7A20C21768008EF850 /* URLSession+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F51CED1E20C186F3008EF850 /* ViewControllerBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED1F20C1871D008EF850 /* ViewControllerBuilder.swift */,
+				F51CED3B20C193E1008EF850 /* MainViewControllerBuilder.swift */,
+				F51CED2220C1874C008EF850 /* CoachViewControllerBuilder.swift */,
+			);
+			path = ViewControllerBuilder;
+			sourceTree = "<group>";
+		};
+		F51CED2820C18ABF008EF850 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED2920C18AF6008EF850 /* LaunchScreen.storyboard */,
+				F51CED2B20C18AF6008EF850 /* Main.storyboard */,
+				F51CED2A20C18AF6008EF850 /* Coach.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F51CED3220C18C2B008EF850 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED3920C18E04008EF850 /* PresentationStyle.swift */,
+				F51CED3320C18C5F008EF850 /* Router.swift */,
+				F51CED3520C18CE3008EF850 /* CoachRouter.swift */,
+				F51CED4020C1A299008EF850 /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F51CED3D20C19573008EF850 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				F51DD8C820C2D17400DE0AE8 /* Environment.swift */,
+				F51CED3E20C1962F008EF850 /* AppEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		F51CED4220C1AC17008EF850 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F52070FB20C349820005D499 /* achievements_test.json */,
+				F51CED4320C1AC47008EF850 /* achievements.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F51CED4520C1AD0A008EF850 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED4620C1AD16008EF850 /* Model.swift */,
+				F51CED4820C1AD40008EF850 /* JSONParser.swift */,
+				F51CED4E20C1AE8D008EF850 /* JSONFileReader.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F51CED4A20C1ADC8008EF850 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED4B20C1ADE7008EF850 /* UtilityError.swift */,
+				F51CED6320C1CA26008EF850 /* Result.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		F51CED6C20C1D4BD008EF850 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED6D20C1D4DF008EF850 /* AchievementViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F51CED7120C20124008EF850 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED7220C201FA008EF850 /* Views */,
+				F51CED6C20C1D4BD008EF850 /* ViewModels */,
+				F51CED2520C1882B008EF850 /* AchievementsViewController.swift */,
+				F51CED6620C1CD05008EF850 /* AchievementsInteractor.swift */,
+				F51CED6920C1CD95008EF850 /* AchievementsPresenter.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		F51CED7220C201FA008EF850 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F51CED7320C2023C008EF850 /* AchievementCollectionViewCell.swift */,
+				F51CED7420C2023C008EF850 /* AchievementCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F52070E720C335620005D499 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				F52070FD20C34EFF0005D499 /* AchievementsTests.swift */,
+				F52070FF20C34F510005D499 /* JSONParserTests.swift */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F51CECD720C17FE0008EF850 /* Stash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F51CECF520C17FE2008EF850 /* Build configuration list for PBXNativeTarget "Stash" */;
+			buildPhases = (
+				F51CECD420C17FE0008EF850 /* Sources */,
+				F51CECD520C17FE0008EF850 /* Frameworks */,
+				F51CECD620C17FE0008EF850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stash;
+			productName = Stash;
+			productReference = F51CECD820C17FE0008EF850 /* Stash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F51CECEB20C17FE2008EF850 /* StashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F51CECF820C17FE2008EF850 /* Build configuration list for PBXNativeTarget "StashTests" */;
+			buildPhases = (
+				F51CECE820C17FE2008EF850 /* Sources */,
+				F51CECE920C17FE2008EF850 /* Frameworks */,
+				F51CECEA20C17FE2008EF850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F51CECEE20C17FE2008EF850 /* PBXTargetDependency */,
+			);
+			name = StashTests;
+			productName = StashTests;
+			productReference = F51CECEC20C17FE2008EF850 /* StashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F51CECD020C17FE0008EF850 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Bruno Agatte";
+				TargetAttributes = {
+					F51CECD720C17FE0008EF850 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					F51CECEB20C17FE2008EF850 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = F51CECD720C17FE0008EF850;
+					};
+				};
+			};
+			buildConfigurationList = F51CECD320C17FE0008EF850 /* Build configuration list for PBXProject "Stash" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F51CECCF20C17FE0008EF850;
+			productRefGroup = F51CECD920C17FE0008EF850 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F51CECD720C17FE0008EF850 /* Stash */,
+				F51CECEB20C17FE2008EF850 /* StashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F51CECD620C17FE0008EF850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51CECE320C17FE2008EF850 /* Assets.xcassets in Resources */,
+				F51CED4420C1AC47008EF850 /* achievements.json in Resources */,
+				F51CED2E20C18AF6008EF850 /* Coach.storyboard in Resources */,
+				F51CED2C20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */,
+				F51CED7620C2023C008EF850 /* AchievementCollectionViewCell.xib in Resources */,
+				F52070FC20C349820005D499 /* achievements_test.json in Resources */,
+				F51CED3020C18AF6008EF850 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51CECEA20C17FE2008EF850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51CED3120C18AF6008EF850 /* Main.storyboard in Resources */,
+				F51CED2D20C18AF6008EF850 /* LaunchScreen.storyboard in Resources */,
+				F51CED2F20C18AF6008EF850 /* Coach.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F51CECD420C17FE0008EF850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51CED4720C1AD16008EF850 /* Model.swift in Sources */,
+				F51DD8C920C2D17400DE0AE8 /* Environment.swift in Sources */,
+				F51CED3420C18C5F008EF850 /* Router.swift in Sources */,
+				F51CED4920C1AD40008EF850 /* JSONParser.swift in Sources */,
+				F51CED4120C1A299008EF850 /* MainRouter.swift in Sources */,
+				F51CED3C20C193E1008EF850 /* MainViewControllerBuilder.swift in Sources */,
+				F51CECDE20C17FE0008EF850 /* MainViewController.swift in Sources */,
+				F51CED6E20C1D4DF008EF850 /* AchievementViewModel.swift in Sources */,
+				F51CED6420C1CA26008EF850 /* Result.swift in Sources */,
+				F51CED7B20C21768008EF850 /* URLSession+Extensions.swift in Sources */,
+				F51CED3820C18DC7008EF850 /* UIViewController+Extensions.swift in Sources */,
+				F51CED6720C1CD05008EF850 /* AchievementsInteractor.swift in Sources */,
+				F51CED7520C2023C008EF850 /* AchievementCollectionViewCell.swift in Sources */,
+				F51CED3620C18CE3008EF850 /* CoachRouter.swift in Sources */,
+				F51CED2020C1871D008EF850 /* ViewControllerBuilder.swift in Sources */,
+				F51CED4C20C1ADE7008EF850 /* UtilityError.swift in Sources */,
+				F51CED6A20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */,
+				F51CED2320C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */,
+				F51CED5E20C1B4B2008EF850 /* Achievement.swift in Sources */,
+				F51CED3A20C18E04008EF850 /* PresentationStyle.swift in Sources */,
+				F51CED5520C1B091008EF850 /* LocalCoachResource.swift in Sources */,
+				F51CED3F20C1962F008EF850 /* AppEnvironment.swift in Sources */,
+				F51CED1C20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift in Sources */,
+				F51CED4F20C1AE8D008EF850 /* JSONFileReader.swift in Sources */,
+				F51CED5220C1B039008EF850 /* CoachResource.swift in Sources */,
+				F51CED1820C185A6008EF850 /* StoryboardInstantiable.swift in Sources */,
+				F51CED6120C1BFFD008EF850 /* Investor.swift in Sources */,
+				F51CED7020C1F509008EF850 /* UIAlertController+Extensions.swift in Sources */,
+				F51CED5820C1B0D6008EF850 /* StaticCoachResource.swift in Sources */,
+				F51CED5B20C1B159008EF850 /* Resources.swift in Sources */,
+				F51CED2620C1882B008EF850 /* AchievementsViewController.swift in Sources */,
+				F51CECDC20C17FE0008EF850 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51CECE820C17FE2008EF850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51CED5320C1B039008EF850 /* CoachResource.swift in Sources */,
+				F51CED2720C1882B008EF850 /* AchievementsViewController.swift in Sources */,
+				F52070EA20C338370005D499 /* JSONParser.swift in Sources */,
+				F51CED5620C1B091008EF850 /* LocalCoachResource.swift in Sources */,
+				F52070F620C33AE00005D499 /* AppDelegate.swift in Sources */,
+				F52070F720C33AE80005D499 /* AppEnvironment.swift in Sources */,
+				F52070FE20C34EFF0005D499 /* AchievementsTests.swift in Sources */,
+				F51CED6B20C1CD95008EF850 /* AchievementsPresenter.swift in Sources */,
+				F520710020C34F510005D499 /* JSONParserTests.swift in Sources */,
+				F52070EE20C33A7E0005D499 /* AchievementViewModel.swift in Sources */,
+				F51CED2120C1871D008EF850 /* ViewControllerBuilder.swift in Sources */,
+				F51CED4D20C1ADEA008EF850 /* UtilityError.swift in Sources */,
+				F52070F420C33AC70005D499 /* PresentationStyle.swift in Sources */,
+				F51CED6220C1BFFD008EF850 /* Investor.swift in Sources */,
+				F52070FA20C33B080005D499 /* MainViewController.swift in Sources */,
+				F51CED6520C1CA26008EF850 /* Result.swift in Sources */,
+				F51CED5920C1B0D6008EF850 /* StaticCoachResource.swift in Sources */,
+				F52070F520C33AD40005D499 /* URLSession+Extensions.swift in Sources */,
+				F52070F320C33ABF0005D499 /* CoachRouter.swift in Sources */,
+				F51CED1920C185A6008EF850 /* StoryboardInstantiable.swift in Sources */,
+				F52070EF20C33A870005D499 /* AchievementCollectionViewCell.swift in Sources */,
+				F52070F120C33AA60005D499 /* MainViewControllerBuilder.swift in Sources */,
+				F52070F820C33AEC0005D499 /* Environment.swift in Sources */,
+				F51CED5020C1AE8D008EF850 /* JSONFileReader.swift in Sources */,
+				F52070F220C33AB80005D499 /* MainRouter.swift in Sources */,
+				F52070F020C33A9B0005D499 /* UIAlertController+Extensions.swift in Sources */,
+				F52070EC20C33A6F0005D499 /* Router.swift in Sources */,
+				F51CED5F20C1B4B2008EF850 /* Achievement.swift in Sources */,
+				F51CED5C20C1B159008EF850 /* Resources.swift in Sources */,
+				F51CED1D20C18634008EF850 /* UIStoryboard+StoryboardInstantiable.swift in Sources */,
+				F52070F920C33AFE0005D499 /* UIViewController+Extensions.swift in Sources */,
+				F52070EB20C33A640005D499 /* Model.swift in Sources */,
+				F51CED6820C1CD05008EF850 /* AchievementsInteractor.swift in Sources */,
+				F51CED2420C1874C008EF850 /* CoachViewControllerBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F51CECEE20C17FE2008EF850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F51CECD720C17FE0008EF850 /* Stash */;
+			targetProxy = F51CECED20C17FE2008EF850 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F51CECF320C17FE2008EF850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F51CECF420C17FE2008EF850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F51CECF620C17FE2008EF850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Stash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.Stash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F51CECF720C17FE2008EF850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Stash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.Stash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F51CECF920C17FE2008EF850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.StashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stash.app/Stash";
+			};
+			name = Debug;
+		};
+		F51CECFA20C17FE2008EF850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.StashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stash.app/Stash";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F51CECD320C17FE0008EF850 /* Build configuration list for PBXProject "Stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51CECF320C17FE2008EF850 /* Debug */,
+				F51CECF420C17FE2008EF850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F51CECF520C17FE2008EF850 /* Build configuration list for PBXNativeTarget "Stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51CECF620C17FE2008EF850 /* Debug */,
+				F51CECF720C17FE2008EF850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F51CECF820C17FE2008EF850 /* Build configuration list for PBXNativeTarget "StashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F51CECF920C17FE2008EF850 /* Debug */,
+				F51CECFA20C17FE2008EF850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F51CECD020C17FE0008EF850 /* Project object */;
+}
