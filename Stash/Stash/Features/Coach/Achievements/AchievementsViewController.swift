@@ -32,6 +32,8 @@ class AchievementsViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+		UIApplication.shared.statusBarStyle = .lightContent
+
 		collectionView?
 			.register(UINib(nibName: AchievementsViewController.cellNibName, bundle: nil),
 					  forCellWithReuseIdentifier: AchievementsViewController.cellIdentifier)
