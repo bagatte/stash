@@ -40,10 +40,11 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 		currentProgressLabel.text = viewModel.currentPoints
 		totalProgressLabel.text = viewModel.totalPoints
 
-		let newProgressBarWidth = calculateProgressBarCompletion(
+		let progressBarWidth = calculateProgressBarCompletion(
 			fromPercentage: viewModel.completionPercentage,
 			inView: progressBarContainerView
 		)
+		progressBarViewTraillingConstraint.constant = progressBarContainerView.frame.size.width
 
 		if let url = viewModel.imageUrl {
 			URLSession.fetchDataFromUrl(url) { (data, urlResponse, error) in
@@ -57,12 +58,13 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 					self?.backgroundImageView.image = UIImage(data: data)
 					self?.activityIndicator.stopAnimating()
 
-					if let progressBarContainerViewWidth = self?.progressBarContainerView.frame.size.width {
-						self?.progressBarViewTraillingConstraint.constant = progressBarContainerViewWidth - newProgressBarWidth
-					}
-
 					UIView.animate(withDuration: 0.5, animations: { [weak self] in
 						self?.activityIndicatorView.alpha = 0
+
+						if let progressBarContainerViewWidth = self?.progressBarContainerView.frame.size.width {
+							self?.progressBarViewTraillingConstraint.constant = progressBarContainerViewWidth - progressBarWidth
+							self?.layoutIfNeeded()
+						}
 					}, completion: { [weak self] _ in
 						self?.activityIndicatorView.isHidden = true
 					})
@@ -70,6 +72,8 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 			}
 		}
 	}
+
+	// MARK: - Private methods
 
 	private func calculateProgressBarCompletion(fromPercentage percentage: Int, inView view: UIView) -> CGFloat {
 		let total = CGFloat(percentage) * view.frame.size.width
