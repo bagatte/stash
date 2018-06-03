@@ -45,7 +45,12 @@ class AchievementCollectionViewCell: UICollectionViewCell {
 
 					self?.backgroundImageView.image = UIImage(data: data)
 					self?.activityIndicator.stopAnimating()
-					self?.activityIndicatorView.isHidden = true
+
+					UIView.animate(withDuration: 0.5, animations: {
+						self?.activityIndicatorView.alpha = 0
+					}, completion: { [weak self] _ in
+						self?.activityIndicatorView.isHidden = true
+					})
 				}
 			}
 		}
